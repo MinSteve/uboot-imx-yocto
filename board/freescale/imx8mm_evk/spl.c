@@ -39,8 +39,6 @@ int spl_board_boot_device(enum boot_device boot_dev_spl)
 {
 	switch (boot_dev_spl) {
 	case SD2_BOOT:
-	case MMC1_BOOT:
-		return BOOT_DEVICE_MMC1;
 	case MMC2_BOOT:
 		return BOOT_DEVICE_MMC1;
 	case SD3_BOOT:
